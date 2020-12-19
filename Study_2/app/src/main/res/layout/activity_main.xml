@@ -1,29 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
 
-    <TextView
-        android:id="@+id/view1"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:background="#BD0A0A"
-        android:layout_centerInParent="true"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
 
-    <TextView
-        android:id="@+id/view2"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:background="#EEFF00"
-        android:layout_toRightOf="@+id/view1" />
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:background="#E11212"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:background="#673AB7"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="#FFC107"
+                android:layout_gravity="center"/>
+        </FrameLayout>
 
-    <TextView
-        android:id="@+id/view3"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:background="#EEFF00"
-        android:layout_above="@+id/view1"
-        />
 
+    </LinearLayout>
 
-</RelativeLayout>
+</LinearLayout>
