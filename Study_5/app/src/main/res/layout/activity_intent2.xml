@@ -6,9 +6,4 @@
     android:layout_height="match_parent"
     tools:context=".Intent2">
 
-    <TextView
-        android:layout_width="80dp"
-        android:layout_height="70dp"
-        android:background="#FFFF66"/>
-
 </LinearLayout>
