@@ -10,6 +10,27 @@ class Fragment1 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         val binding = ActivityFragment1Binding.inflate(layoutInflater)
         setContentView(binding.root)
+        val fragmentOne:FragmentOne = FragmentOne()
+
+        val bundle:Bundle= Bundle()
+        bundle.putString("hello","hello")
+        fragmentOne.arguments=bundle
+
+        binding.out.setOnClickListener{
+            val fragmentManager:FragmentManager = supportFragmentManager
+
+            val fragmentTransaction=fragmentManager.beginTransaction()
+            fragmentTransaction.replace(R.id.container,fragmentOne)
+            fragmentTransaction.commit()
+
+        }
+
+        binding.vanish.setOnClickListener {
+            val fragmentManager:FragmentManager=supportFragmentManager
+            val fragmentTransaction=fragmentManager.beginTransaction()
+            fragmentTransaction.detach(fragmentOne)
+            fragmentTransaction.commit()
+        }
 
         binding.frag1.setOnClickListener{
             val fragmentOne:FragmentOne= FragmentOne()

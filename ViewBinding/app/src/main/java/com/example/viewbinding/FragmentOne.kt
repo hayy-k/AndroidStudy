@@ -15,15 +15,9 @@ class FragmentOne:Fragment(){
         super.onAttach(context)
     }
 
-
-
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        Log.d("Life-Cycle","onCreateView")
-        return super.onCreateView(inflater, container, savedInstanceState)
+    override fun onCreate(savedInstanceState: Bundle?) {
+        Log.d("Life-cycle","onCreate")
+        super.onCreate(savedInstanceState)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -31,8 +25,22 @@ class FragmentOne:Fragment(){
         super.onViewCreated(view, savedInstanceState)
     }
 
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        return inflater.inflate(R.layout.activity_fragment1,container,false)
+        Log.d("Life-Cycle","onCreateView")
+    }
+
+
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         Log.d("Life-Cycle","onActivityCreated")
+        val data= arguments?.getString("hello")
+        if (data != null) {
+            Log.d("dataa",data)
+        }
         super.onActivityCreated(savedInstanceState)
     }
 
