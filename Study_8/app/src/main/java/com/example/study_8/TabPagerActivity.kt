@@ -48,7 +48,7 @@ class PagerAdapter(
         return tabCount
     }
 
-    override fun getItem(position: Int): Fragment {
+    override fun getItem(position: Int): Fragment1 {
         when(position){
             0->{
                 return Fragment1()
