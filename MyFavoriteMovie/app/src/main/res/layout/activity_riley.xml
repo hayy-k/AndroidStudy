@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Riley"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#66BB86FC"
+        android:text="RILEY"
+        android:textSize="50dp"
+        android:textColor="@color/black"
+        android:gravity="center_horizontal" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/inside_out_virtual_movie_night"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EEE5FA"
+        android:textSize="20dp"
+        android:text="주인공 여자 아이\n\n 이사를 겪으면서 여러 감정을 느끼게 된다.\n 기쁨이와 슬픔이가 가출하고 나서 소위 말하는 사춘기 감성이 폭발해 가출까지 감행하지만 정신차리고 성숙해지는 과정을 겪게 된다. \n 미워할 수 없는 캐릭터"
+        android:gravity="center"/>
+
+
+</LinearLayout>
