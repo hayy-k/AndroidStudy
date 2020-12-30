@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyFavoriteMovie">
-        <activity android:name=".Sadness"></activity>
+        <activity android:name=".Anger"></activity>
+        <activity android:name=".Fear" />
+        <activity android:name=".Disgust" />
+        <activity android:name=".Sadness">
+        </activity>
         <activity android:name=".Joy" />
         <activity android:name=".Riley" />
         <activity android:name=".StoryActivity" />

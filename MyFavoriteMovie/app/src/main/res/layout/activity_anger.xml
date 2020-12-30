@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Riley"
+    tools:context=".Anger"
     android:orientation="vertical">
 
     <ScrollView
@@ -20,7 +20,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
                 android:background="#66BB86FC"
-                android:text="RILEY"
+                android:text="ANGER"
                 android:textSize="50dp"
                 android:textColor="@color/black"
                 android:gravity="center_horizontal" />
@@ -30,21 +30,21 @@
                 android:layout_height="wrap_content"
                 android:background="#A88ADD"
                 android:textSize="25dp"
-                android:text="I... I know you don't want me to. But... I miss home. I miss Minnesota.\n 이... 이런 얘기 듣고 싶지 않으시겠지만... 집이 그리워요. 미네소타가 그리워요."
+                android:text="Congratulations, San Francisco! You've ruined pizza! First, the Hawaiians, and now you! \n 그래 잘한다, 샌프란시스코! 피자를 망쳤어! 시금치 피자처럼!\n 너도 꽝이야!"
                 android:padding="20dp"
                 android:gravity="center"/>
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="300dp"
-                android:src="@drawable/riley"/>
+                android:layout_height="wrap_content"
+                android:src="@drawable/anger"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#EEE5FA"
                 android:textSize="20dp"
-                android:text="라일리\n\n 하키를 좋아하는 여자아이. 감정의 리더는 기쁨이다. 성격 섬으로는 엉뚱 섬, 정직 섬, 가족 섬, 우정 섬, 하키 섬을 두고 있는데 이에 맞추어 가족과 친구를 매우 사랑하며 하키를 좋아하는 평범한 여자아이의 성격을 가지고 있다. 엉뚱 섬을 제일 좋아하는 기쁨이의 영향으로 엉뚱한 장난을 좋아하는 발랄한 면도 있다."
+                android:text="버럭이\n\n 한마디로 이름처럼 버럭하는 성격. 다른 이름으로는 분노라고 불리기도 한다. 상당히 다혈질적이고 열받을수록 머리 위에 열이 오르기 시작해 완전 폭발하면 불꽃이 치솟는다."
                 android:gravity="center"/>
 
         </LinearLayout>

@@ -7,26 +7,48 @@
     tools:context=".Joy"
     android:orientation="vertical">
 
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:background="#66BB86FC"
-        android:text="JOY"
-        android:textSize="50dp"
-        android:textColor="@color/black"
-        android:gravity="center_horizontal" />
+        android:layout_height="match_parent">
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/inside_out_virtual_movie_night"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#EEE5FA"
-        android:textSize="20dp"
-        android:text="기쁨이\n\n 항상 긍정적이고 밝고 신나는 걸 찾는다.\n 그래서 슬픔이가 항상 주변을 우울하게 만들면서 기분을 흐리는 것을 전혀 이해하지 못한다.\n 하지만 "
-        android:gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#66BB86FC"
+                android:text="JOY"
+                android:textSize="50dp"
+                android:textColor="@color/black"
+                android:gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#A88ADD"
+                android:textSize="25dp"
+                android:text="We can't focus on what's going wrong.\nThere's always a way to turn things around!\n 잘못된 일만 신경 쓰진 마.\n 되돌릴 방법은 항상 있어!"
+                android:padding="20dp"
+                android:gravity="center"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:src="@drawable/joy"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#EEE5FA"
+                android:textSize="20dp"
+                android:text="기쁨이\n\n 감정 중 가장 먼저 생겨난 감정의 리더. 라일리를 언제나 행복하게 해 줄 거라 결심했다. 그래서인지 처음 라일리를 울리고 뭐만 만졌다 하면 우울한 기억으로 만드는 슬픔이를 탐탁치 않아한다. 그러나 항상 기쁜 것만이 좋은 것은 아니며, 슬픔이 라일리를 정신적으로 성장시키는 데에 중요한 역할을 하고, 주변 사람들로부터 공감을 이끌어내어 힘든 상황을 극복하게 도와주고, 이는 곧 기쁨으로 이어진다는 것을 깨닫자 슬픔 또한 중요한 감정임을 알게 되며 그 존재를 인정하고 받아들인다."
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </LinearLayout>

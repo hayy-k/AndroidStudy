@@ -7,26 +7,53 @@
     tools:context=".Sadness"
     android:orientation="vertical">
 
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:background="#66BB86FC"
-        android:text="SADNESS"
-        android:textSize="50dp"
-        android:textColor="@color/black"
-        android:gravity="center_horizontal" />
+        android:layout_height="match_parent">
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/inside_out_virtual_movie_night"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#EEE5FA"
-        android:textSize="20dp"
-        android:text="슬픔이\n\n "
-        android:gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#66BB86FC"
+                android:text="SADNESS"
+                android:textSize="50dp"
+                android:textColor="@color/black"
+                android:gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#A88ADD"
+                android:textSize="25dp"
+                android:text="I'm too sad to walk. \n 너무 슬퍼서 못 걷겠어."
+                android:padding="20dp"
+                android:gravity="center"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/sadness"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="400dp"
+                android:src="@drawable/sadness2"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#EEE5FA"
+                android:textSize="20dp"
+                android:text="슬픔이\n\n 작중에서 가장 중요한 역할을 맡은 캐릭터로, 초반엔 즐거운 기억만을 남겨야 한다는 기쁨이에게 무시를 당해서 아무것도 못 했지만, 정작 라일리가 잘못된 길로 들어가기 직전에 가족의 소중함을 일깨워 준 것은 기쁨이 아닌 슬픔의 감정이었다. 실제로도 슬픔, 무기력 뿐만 아니라 이해심, 공감, 사랑 등은 슬픔의 담당이었다."
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </LinearLayout>

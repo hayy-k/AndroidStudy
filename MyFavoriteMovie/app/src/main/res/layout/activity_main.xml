@@ -34,26 +34,29 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
-                android:background="#03A9F4"
+                android:background="#00BCD4"
                 android:text="STORY"
                 android:textSize="30dp"
-                android:layout_margin="5dp"/>
+                android:layout_margin="5dp"
+                android:id="@+id/story"/>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
+                android:layout_margin="5dp"
                 android:background="#03A9F4"
                 android:text="RILEY"
                 android:textSize="30dp"
-                android:layout_margin="5dp"/>
+                android:id="@+id/riley"/>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
-                android:background="#03A9F4"
+                android:background="#FFEB3B"
                 android:text="JOY"
                 android:textSize="30dp"
-                android:layout_margin="5dp"/>
+                android:layout_margin="5dp"
+                android:id="@+id/joy"/>
 
             <Button
                 android:layout_width="match_parent"
@@ -61,31 +64,35 @@
                 android:background="#03A9F4"
                 android:text="SADNESS"
                 android:textSize="30dp"
-                android:layout_margin="5dp"/>
+                android:layout_margin="5dp"
+                android:id="@+id/sadness"/>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
-                android:background="#03A9F4"
+                android:background="#4CAF50"
                 android:text="DISGUST"
                 android:textSize="30dp"
-                android:layout_margin="5dp"/>
+                android:layout_margin="5dp"
+                android:id="@+id/disgust"/>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
-                android:background="#03A9F4"
+                android:background="#8951ED"
                 android:text="FEAR"
                 android:textSize="30dp"
-                android:layout_margin="5dp"/>
+                android:layout_margin="5dp"
+                android:id="@+id/fear"/>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
-                android:background="#03A9F4"
+                android:background="#FF4322"
                 android:text="ANGER"
                 android:textSize="30dp"
-                android:layout_margin="5dp"/>
+                android:layout_margin="5dp"
+                android:id="@+id/anger"/>
 
         </LinearLayout>
 

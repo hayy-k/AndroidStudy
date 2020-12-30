@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Riley"
-    android:orientation="vertical">
+    tools:context=".Fear">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -20,7 +19,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
                 android:background="#66BB86FC"
-                android:text="RILEY"
+                android:text="FEAR"
                 android:textSize="50dp"
                 android:textColor="@color/black"
                 android:gravity="center_horizontal" />
@@ -30,21 +29,21 @@
                 android:layout_height="wrap_content"
                 android:background="#A88ADD"
                 android:textSize="25dp"
-                android:text="I... I know you don't want me to. But... I miss home. I miss Minnesota.\n 이... 이런 얘기 듣고 싶지 않으시겠지만... 집이 그리워요. 미네소타가 그리워요."
+                android:text="Thank you, Joy. But I'll have you know I'm not scared of everything. \n 고마워 기쁨아, 하지만 내가 모든 걸 다 무서워하는 게 아니라는 건 알아둬야 할 것 같아."
                 android:padding="20dp"
                 android:gravity="center"/>
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="300dp"
-                android:src="@drawable/riley"/>
+                android:layout_height="wrap_content"
+                android:src="@drawable/fear"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#EEE5FA"
                 android:textSize="20dp"
-                android:text="라일리\n\n 하키를 좋아하는 여자아이. 감정의 리더는 기쁨이다. 성격 섬으로는 엉뚱 섬, 정직 섬, 가족 섬, 우정 섬, 하키 섬을 두고 있는데 이에 맞추어 가족과 친구를 매우 사랑하며 하키를 좋아하는 평범한 여자아이의 성격을 가지고 있다. 엉뚱 섬을 제일 좋아하는 기쁨이의 영향으로 엉뚱한 장난을 좋아하는 발랄한 면도 있다."
+                android:text="소심이\n\n 안전주의자. 하지만 정도가 지나쳐서 뭐든 겁부터 먹는다. 주로 보이는 역할은 놀라움, 두려움, 불안. 반면 다칠 일이 없는 꿈 보는 일을 할 때는 당당하게 행동한다."
                 android:gravity="center"/>
 
         </LinearLayout>
