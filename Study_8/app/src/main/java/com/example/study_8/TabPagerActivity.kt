@@ -16,7 +16,7 @@ class TabPagerActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_tab_pager)
 
-        tab_layout.addTab(tab_layout.newTab().setText("ONE"))
+        /*tab_layout.addTab(tab_layout.newTab().setText("ONE"))
         tab_layout.addTab(tab_layout.newTab().setText("TWO"))
         tab_layout.addTab(tab_layout.newTab().setText("THREE"))
 
@@ -37,18 +37,18 @@ class TabPagerActivity : AppCompatActivity() {
             }
         })
         view_pager.addOnPageChangeListener(TabLayout.TabLayoutOnPageChangeListener(tab_layout))
-    }
+    }*/
 }
 
-class PagerAdapter(
+/*class PagerAdapter(
     fragmentManager: FragmentManager,
     val tabCount:Int
 ):FragmentStatePagerAdapter(fragmentManager){
     override fun getCount(): Int {
         return tabCount
-    }
+    }*/
 
-    override fun getItem(position: Int): Fragment1 {
+/*    override fun getItem(position: Int): Fragment1 {
         when(position){
             0->{
                 return Fragment1()
@@ -63,5 +63,5 @@ class PagerAdapter(
                 return Fragment1()
             }
         }
-    }
+    }*/
 }
