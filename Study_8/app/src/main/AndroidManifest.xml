@@ -9,20 +9,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Study_8">
-        <activity android:name=".SharedPreference">
+        <activity android:name=".RealmActivity"></activity>
+        <activity android:name=".MainActivity2">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".SharedPreference"></activity>
         <activity android:name=".ClassStudy" />
         <activity android:name=".Fragment3" />
         <activity android:name=".Fragment2" />
         <activity android:name=".Fragment1" />
         <activity android:name=".TabPagerActivity" />
-        <activity android:name=".MainActivity">
-        </activity>
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>
