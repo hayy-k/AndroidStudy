@@ -2,7 +2,9 @@
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
 <item android:drawable="@color/white"/>
     <item>
-        <bitmap/>
-        // splash 비트맵 이미지 크기 조절, 글씨 추가 모르겠어용..
+        <bitmap
+            android:src="@drawable/start_uf"
+            android:gravity="center"/>
+        //글자 추가, 비트맵 이미지 크기 변경?
     </item>
 </layer-list>
