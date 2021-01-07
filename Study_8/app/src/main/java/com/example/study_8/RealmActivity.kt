@@ -47,3 +47,5 @@ class RealmActivity : AppCompatActivity() {
         }
     }
 }
+
+class School ;

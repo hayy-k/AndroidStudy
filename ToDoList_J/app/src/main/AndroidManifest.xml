@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.diaryinmyhand">
+    package="com.example.todolist_j">
 
     <application
         android:allowBackup="true"
@@ -8,10 +8,8 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.DiaryinMyHand">
-        <activity android:name=".DiaryWriting">
-        </activity>
-        <activity android:name=".CalenderActivity" />
+        android:theme="@style/Theme.ToDoList_J">
+        <activity android:name=".TodoList_version2"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

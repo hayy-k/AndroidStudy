@@ -48,6 +48,6 @@
         android:id="@+id/recycler_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#F0E5FF"/>
+        android:background="#F0E5FF" />
 
 </LinearLayout>

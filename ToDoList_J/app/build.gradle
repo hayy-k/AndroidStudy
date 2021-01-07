@@ -4,15 +4,12 @@ plugins {
     id 'kotlin-android-extensions'
 }
 
-apply plugin: 'kotlin-kapt'
-apply plugin: 'realm-android'
-
 android {
     compileSdkVersion 30
     buildToolsVersion "30.0.3"
 
     defaultConfig {
-        applicationId "com.example.study_8"
+        applicationId "com.example.todolist_j"
         minSdkVersion 16
         targetSdkVersion 30
         versionCode 1
@@ -34,7 +31,7 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
-    buildFeatures{
+    buildFeatures {
         viewBinding = true
     }
 }
