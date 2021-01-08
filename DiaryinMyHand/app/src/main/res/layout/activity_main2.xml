@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".MainActivity2"
     android:orientation="vertical"
     android:layout_margin="5dp"
     android:padding="5dp">
@@ -62,13 +62,20 @@
         tools:ignore="MissingConstraints" />
 
     <CalendarView
+        android:id="@+id/calendarView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:layout_editor_absoluteX="5dp" />
+
+    <!--// 캘린더뷰 안쓰고 cosmocalendar 쓰는 걸로
+    // 캘린더에서 특정 날짜를 눌렀을 때 내용이 뜨게 어떻게...????-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/calendarView"
         tools:layout_editor_absoluteX="5dp"/>
-
-    // 캘린더뷰 안쓰고 cosmocalendar 쓰는 걸로
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
