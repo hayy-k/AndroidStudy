@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(view)
 
         binding.Settings.setOnClickListener {
-            val intent = Intent(this, CalendarActivity::class.java)
+            val intent = Intent(this, SettingsActivity::class.java)
         }
 
         binding.Calendar.setOnClickListener {
