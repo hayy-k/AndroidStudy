@@ -10,7 +10,7 @@
     android:padding="5dp">
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/Back"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginStart="16dp"
@@ -39,6 +39,7 @@
     <ImageButton
         android:layout_width="40dp"
         android:layout_height="40dp"
+        android:id="@+id/delete"
         android:layout_marginStart="96dp"
         android:layout_marginLeft="96dp"
         android:layout_marginTop="16dp"
@@ -73,7 +74,7 @@
             android:layout_height="wrap_content">
 
             <ImageButton
-                android:id="@+id/clock"
+                android:id="@+id/Clock"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_marginStart="16dp"
@@ -86,21 +87,22 @@
                 app:layout_constraintStart_toStartOf="parent" />
 
             <ImageButton
-                android:id="@+id/imageButton3"
+                android:id="@+id/Picture"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginLeft="8dp"
                 android:src="@drawable/camera_1"
-                app:layout_constraintStart_toEndOf="@+id/clock" />
+                app:layout_constraintStart_toEndOf="@+id/Clock" />
 
             <ImageButton
                 android:layout_width="40dp"
                 android:layout_height="40dp"
+                android:id="@+id/Map"
                 android:layout_marginStart="8dp"
                 android:layout_marginLeft="8dp"
                 android:src="@drawable/map"
-                app:layout_constraintStart_toEndOf="@+id/imageButton3" />
+                app:layout_constraintStart_toEndOf="@+id/Picture" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

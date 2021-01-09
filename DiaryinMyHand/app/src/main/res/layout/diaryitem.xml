@@ -7,13 +7,12 @@
     android:gravity="center"
     android:orientation="horizontal">
 
-    <!--// 일기에 제목을 정할 수 있게 하면 제목을 불러와야 하는 ..?
-    // 아니면 일기를 쓴 시각을 적는 방식?-->
-
-    <CheckBox
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="2021년 1월 9일 A.M. 1:14"
+        android:text="A.M. 1:14"
+        android:textSize="30dp"
+        android:padding="5dp"
         android:id="@+id/item_title"
         android:layout_weight="1"
         tools:ignore="MissingConstraints"/>
