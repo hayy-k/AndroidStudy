@@ -10,8 +10,10 @@
         android:id="@+id/open"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="16dp"
+        android:text="Gallery"
         tools:layout_editor_absoluteY="111dp" />
 
     <TextView
@@ -20,11 +22,13 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
         android:text="My Gallery"
-        android:textSize="30dp"
+        android:textColor="#A14EF3"
+        android:textSize="40dp"
         android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="133dp" />
+        tools:ignore="MissingConstraints" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
