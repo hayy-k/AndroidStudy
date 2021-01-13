@@ -15,12 +15,12 @@ class DiaryWriting : AppCompatActivity() {
 
         binding.Back.setOnClickListener {
             val intent = Intent(this,MainActivity2::class.java)
+            startActivity(intent)
         }
 
-        // < 버튼과 X 버튼의 역할이 같은 건가요..? 버튼이 모호하네용
-
-        binding.delete.setOnClickListener {
+        binding.Ok.setOnClickListener {
             val intent1 = Intent(this,MainActivity2::class.java)
+            startActivity(intent1)
         }
 
     }

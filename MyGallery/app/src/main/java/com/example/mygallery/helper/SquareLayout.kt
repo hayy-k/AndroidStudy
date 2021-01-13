@@ -1,4 +1,4 @@
-package com.example.mygallery
+package com.example.mygallery.helper
 
 import android.annotation.TargetApi
 import android.content.Context

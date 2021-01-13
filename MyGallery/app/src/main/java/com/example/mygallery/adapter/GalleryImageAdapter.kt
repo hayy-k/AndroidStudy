@@ -1,4 +1,4 @@
-package com.example.mygallery
+package com.example.mygallery.adapter
 
 
 import android.content.Context
@@ -6,6 +6,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.load.engine.DiskCacheStrategy
+import com.example.mygallery.R
+import com.example.mygallery.helper.GlideApp
+import kotlinx.android.synthetic.main.item_gallery_image.view.*
 
 class GalleryImageAdapter (private val itemList: List<Image>):
     RecyclerView.Adapter<GalleryImageAdapter.ViewHolder>() {
@@ -13,7 +17,7 @@ class GalleryImageAdapter (private val itemList: List<Image>):
     private var context : Context? = null
     var listener: GalleryImageClickListener? = null
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): GalleryImageAdapter.ViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         context = parent.context
         val view = LayoutInflater.from(parent.context).inflate(R.layout.item_gallery_image, parent, false)
         return ViewHolder(view)
@@ -23,7 +27,7 @@ class GalleryImageAdapter (private val itemList: List<Image>):
         return itemList.size
     }
 
-    override fun onBindViewHolder(holder: GalleryImageAdapter.ViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.bind()
     }
 
@@ -32,10 +36,17 @@ class GalleryImageAdapter (private val itemList: List<Image>):
 
             val image = itemList.get(adapterPosition)
 
-            // 이미지 로드
             GlideApp.with(context!!)
-                .load
+                .load(image.imageUrl)
+                .centerCrop()
+                .diskCacheStrategy(DiskCacheStrategy.ALL)
+                .into(itemView.ivGalleryImage)
 
-        }
+            itemView.container.setOnClickListener {
+                listener?.onClick(adapterPosition)
+            }
+
+            }
+
     }
 }

@@ -16,14 +16,17 @@ class MainActivity2 : AppCompatActivity() {
 
         binding.Settings.setOnClickListener {
             val intent = Intent(this, CalendarActivity::class.java)
+            startActivity(intent)
         }
 
         binding.Calendar.setOnClickListener {
             val intent1 = Intent(this, CalendarActivity::class.java)
+            startActivity(intent1)
         }
 
         binding.Plus.setOnClickListener {
             val intent2 = Intent(this, DiaryWriting::class.java)
+            startActivity(intent2)
         }
 
     }
