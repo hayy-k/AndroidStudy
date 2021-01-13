@@ -1,4 +1,6 @@
 package com.example.mygallery
 
-class Image {
-}
+data class Image (
+    val imageUrl: String,
+    val title: String
+)
