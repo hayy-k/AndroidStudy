@@ -54,7 +54,7 @@ class MainActivity2 : AppCompatActivity(), GalleryImageClickListener {
         bundle.putInt("position", position)
 
         val fragmentTransaction = supportFragmentManager.beginTransaction()
-        val galleryFragment = GalleryFullscreenFragment
+        val galleryFragment = GalleryFullscreenFragment()
         galleryFragment.setArguments(bundle)
         galleryFragment.show(fragmentTransaction, "gallery")
     }

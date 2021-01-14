@@ -7,7 +7,7 @@ private const val MIN_SCALE = 0.75f
 
 class ZoomOutPageTransformer : ViewPager.PageTransformer {
 
-    override fun transformPage(page: View, position: Float) {
+    override fun transformPage(view: View, position: Float) {
         view.apply {
             val pageWidth = width
             when {

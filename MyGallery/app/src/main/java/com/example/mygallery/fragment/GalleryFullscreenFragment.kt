@@ -1,7 +1,6 @@
 package com.example.mygallery.fragment
 
 import android.content.Context
-import android.media.Image
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -10,15 +9,17 @@ import android.widget.TextView
 import com.example.mygallery.R
 import androidx.fragment.app.DialogFragment
 import androidx.viewpager.widget.PagerAdapter
+import com.example.mygallery.adapter.Image
 import androidx.viewpager.widget.ViewPager
 import com.bumptech.glide.load.engine.DiskCacheStrategy
 import com.example.mygallery.helper.GlideApp
 import com.example.mygallery.helper.ZoomOutPageTransformer
 import kotlinx.android.synthetic.main.image_fullscreen.view.*
 
+
 class GalleryFullscreenFragment : DialogFragment() {
 
-    private var imageList = ArrayList<Image>()
+    private var imageList = ArrayList<com.example.mygallery.adapter.Image>()
     private var selectedPosition: Int = 0
 
     lateinit var tvGalleryTitle: TextView
@@ -32,12 +33,12 @@ class GalleryFullscreenFragment : DialogFragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        viewPager = view.findViewById(R.id.viewPager)
-        tvGalleryTitle = view.findViewById(R.id.tvGalleryTitle)
+        viewPager = view!!.findViewById(R.id.viewPager)
+        tvGalleryTitle = view!!.findViewById(R.id.tvGalleryTitle)
 
         galleryPagerAdapter = GalleryPagerAdapter()
 
-        imageList = arguments?.getSerializable("images") as ArrayList<Image>
+        imageList = arguments?.getSerializable("images") as ArrayList<com.example.mygallery.adapter.Image>
         selectedPosition = arguments!!.getInt("position")
 
         viewPager.adapter = galleryPagerAdapter
