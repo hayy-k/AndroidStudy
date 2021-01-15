@@ -1,10 +1,7 @@
 package com.example.diaryinmyhand
 
-class DiaryAdapter {
-
-    /*inner class DiaryViewHolder(){
-
-    }
+/*
+class DiaryAdapter (private val dirayList: List<D>){
 
     override fun onCreateViewHolder():DiaryViewHolder{
 
@@ -12,5 +9,10 @@ class DiaryAdapter {
 
     override fun onBindViewHolder(){
 
-    }*/
-}
+    }
+
+    inner class DiaryViewHolder(){
+
+    }
+
+}*/
