@@ -6,9 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    //주사위 앱
-    //메모 앱
-
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
@@ -16,7 +13,8 @@
         android:text="Button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="34dp" />
+        tools:layout_editor_absoluteX="34dp"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button2"
@@ -25,7 +23,8 @@
         android:text="Button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="166dp" />
+        tools:layout_editor_absoluteX="166dp"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button3"
@@ -34,5 +33,9 @@
         android:text="Button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="303dp" />
+        tools:layout_editor_absoluteX="303dp"
+        tools:ignore="MissingConstraints" />
+
+    // 시간표 앱 / 주사위 앱 / 메모장 앱 택 1..?
+
 </androidx.constraintlayout.widget.ConstraintLayout>
