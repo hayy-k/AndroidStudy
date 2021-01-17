@@ -73,8 +73,8 @@
         app:layout_constraintTop_toBottomOf="@+id/textView"
         tools:layout_editor_absoluteX="5dp" />
 
-    <!--// 캘린더뷰 안쓰고 cosmocalendar 쓰는 걸로
-    // 캘린더에서 특정 날짜를 눌렀을 때 아래에 내용이 뜨게 어떻게...????
+    <!--캘린더뷰 안쓰고 cosmoCalendar 쓰는 걸로
+    캘린더에서 특정 날짜를 눌렀을 때 아래에 내용이 뜨게 어떻게...????
     일단 scrollview 안쓰고 내비두기-->
 
     <androidx.recyclerview.widget.RecyclerView
