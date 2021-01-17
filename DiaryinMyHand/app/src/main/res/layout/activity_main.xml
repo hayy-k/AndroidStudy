@@ -70,7 +70,5 @@
         app:layout_constraintTop_toBottomOf="@+id/textView"
         tools:layout_editor_absoluteX="5dp"/>
 
-    // 캘린더뷰 안쓰고 cosmocalendar 쓰는 걸로
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

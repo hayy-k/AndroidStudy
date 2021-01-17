@@ -77,6 +77,8 @@
     캘린더에서 특정 날짜를 눌렀을 때 아래에 내용이 뜨게 어떻게...????
     일단 scrollview 안쓰고 내비두기-->
 
+
+    //addView 쓰기
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
