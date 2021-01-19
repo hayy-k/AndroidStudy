@@ -4,12 +4,33 @@ import android.content.DialogInterface
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.study_5.databinding.ActivityAlertDialogBinding
+import com.example.study_5.databinding.ActivityMainBinding
 
 
 class AlertDialog : AppCompatActivity() {
+    private lateinit var binding: ActivityAlertDialogBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_alert_dialog)
+        binding = ActivityAlertDialogBinding.inflate(layoutInflater)
+        val view = binding.root
+        setContentView(view)
+
+        binding.buttonQuit.setOnClickListener {
+
+            AlertDialog.Builder(this)
+                .setTitle("AlertDialog1")
+                .setMessage("Do you want to leave?")
+                .setPositivebutton("Yes", DialogInterface.OnClickListener { dialog, which ->
+                    Toast.makeText((this, "Yes", Toast.LENGTH_SHORT).show())
+                })
+                .setNegativeButton("No", DialogInterface.OnClickListener { dialog, which ->
+                    Toast.makeText(this,"No",Toast.LENGTH_SHORT).show()
+                })
+                .create()
+                .show()
+        }
+
     }
 
     /*fun showDialog() {
