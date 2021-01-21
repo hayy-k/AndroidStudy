@@ -18,7 +18,7 @@ class AlertDialog : AppCompatActivity() {
 
         binding.buttonQuit.setOnClickListener {
 
-            AlertDialog.Builder(this)
+            val alertDialog = AlertDialog.Builder(this)
                 .setTitle("AlertDialog1")
                 .setMessage("Do you want to leave?")
                 .setPositivebutton("Yes", DialogInterface.OnClickListener { dialog, which ->
@@ -28,7 +28,7 @@ class AlertDialog : AppCompatActivity() {
                     Toast.makeText(this,"No",Toast.LENGTH_SHORT).show()
                 })
                 .create()
-                .show()
+            alertDialog.setView
         }
 
     }
