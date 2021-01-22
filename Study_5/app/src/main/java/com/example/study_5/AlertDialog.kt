@@ -1,5 +1,6 @@
 package com.example.study_5
 
+import android.app.AlertDialog
 import android.content.DialogInterface
 import android.os.Bundle
 import android.widget.Toast
@@ -18,37 +19,37 @@ class AlertDialog : AppCompatActivity() {
         setContentView(view)
 
         binding.buttonQuit.setOnClickListener {
-            findViewById<ViewPager>(R.id.button_quit){
-                val alertDialog = AlertDialog.Builder(this)
-                        .setTitle("AlertDialog1")
-                        .setMessage("Do you want to leave?")
-                        .setPositivebutton("Yes", DialogInterface.OnClickListener { dialog, which ->
-                            Toast.makeText((this, "Yes", Toast.LENGTH_SHORT).show())
-                        })
-                        .setNegativeButton("No", DialogInterface.OnClickListener { dialog, which ->
-                            Toast.makeText(this, "No", Toast.LENGTH_SHORT).show()
-                        })
-                        .create()
-                        .show()
+            val alertDialog = AlertDialog.Builder(this)
+                    .setTitle("AlertDialog1")
+                    .setMessage("Do you want to leave?")
+                    .setPositiveButton("Yes", DialogInterface.OnClickListener { dialog, which ->
+                        Toast.makeText(this, "Yes", Toast.LENGTH_SHORT).show()
+                    })
+                    .setNegativeButton("No", DialogInterface.OnClickListener { dialog, which ->
+                        Toast.makeText(this, "No", Toast.LENGTH_SHORT).show()
+                    })
+                    .create()
+                    .show()
         }
+        // AlertDialog(App) / setPositiveButton (CharSequence)
     }
-
-    /*fun showDialog() {
-        val msgBuilder: AlertDialog.Builder = Builder(this@AlertDialog)
-            .setTitle("앱 끈다?")
-            .setMessage("진짜 끈다?")
-            .setPositiveButton("꺼라",
-                DialogInterface.OnClickListener { dialogInterface, i -> finish() })
-            .setNegativeButton("취소",
-                DialogInterface.OnClickListener { dialogInterface, i ->
-                    Toast.makeText(
-                        this@AlertDialog,
-                        "안 끔",
-                        Toast.LENGTH_SHORT
-                    ).show()
-                })
-        val msgDlg: AlertDialog = msgBuilder.create()
-        msgDlg.show()
-    }
-*/
 }
+
+/*fun showDialog() {
+            val msgBuilder: AlertDialog.Builder = Builder(this@AlertDialog)
+                .setTitle("앱 끈다?")
+                .setMessage("진짜 끈다?")
+                .setPositiveButton("꺼라",
+                    DialogInterface.OnClickListener { dialogInterface, i -> finish() })
+                .setNegativeButton("취소",
+                    DialogInterface.OnClickListener { dialogInterface, i ->
+                        Toast.makeText(
+                            this@AlertDialog,
+                            "안 끔",
+                            Toast.LENGTH_SHORT
+                        ).show()
+                    })
+            val msgDlg: AlertDialog = msgBuilder.create()
+            msgDlg.show()
+        }
+    */
