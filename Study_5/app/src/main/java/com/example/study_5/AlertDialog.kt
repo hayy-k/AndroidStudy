@@ -4,6 +4,7 @@ import android.content.DialogInterface
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.viewpager.widget.ViewPager
 import com.example.study_5.databinding.ActivityAlertDialogBinding
 import com.example.study_5.databinding.ActivityMainBinding
 
@@ -17,20 +18,19 @@ class AlertDialog : AppCompatActivity() {
         setContentView(view)
 
         binding.buttonQuit.setOnClickListener {
-
-            val alertDialog = AlertDialog.Builder(this)
-                .setTitle("AlertDialog1")
-                .setMessage("Do you want to leave?")
-                .setPositivebutton("Yes", DialogInterface.OnClickListener { dialog, which ->
-                    Toast.makeText((this, "Yes", Toast.LENGTH_SHORT).show())
-                })
-                .setNegativeButton("No", DialogInterface.OnClickListener { dialog, which ->
-                    Toast.makeText(this,"No",Toast.LENGTH_SHORT).show()
-                })
-                .create()
-            alertDialog.setView
+            findViewById<ViewPager>(R.id.button_quit){
+                val alertDialog = AlertDialog.Builder(this)
+                        .setTitle("AlertDialog1")
+                        .setMessage("Do you want to leave?")
+                        .setPositivebutton("Yes", DialogInterface.OnClickListener { dialog, which ->
+                            Toast.makeText((this, "Yes", Toast.LENGTH_SHORT).show())
+                        })
+                        .setNegativeButton("No", DialogInterface.OnClickListener { dialog, which ->
+                            Toast.makeText(this, "No", Toast.LENGTH_SHORT).show()
+                        })
+                        .create()
+                        .show()
         }
-
     }
 
     /*fun showDialog() {
