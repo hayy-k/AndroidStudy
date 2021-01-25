@@ -48,12 +48,11 @@ class AlertDialog : AppCompatActivity() {
                     })
                     .setNeutralButton("이모티콘", DialogInterface.OnClickListener { dialog, which ->
                         Toast.makeText(this, "이모티콘을 설정합니다.", Toast.LENGTH_SHORT).show()
-                        //이모티콘 어쩌지.....
+                        //이모티콘 설정??
                     })
                     .create()
                     .show()
         }
-
 
 
 
